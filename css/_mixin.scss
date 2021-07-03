@@ -1,0 +1,15 @@
+@mixin flexCenter($justifyC){
+    display: flex;
+    justify-content: $justifyC;
+    align-items:center;
+}
+
+@mixin gridCenter(){
+    display: grid;
+    place-items: center;
+}
+
+@mixin bound($wid, $hei){
+    width:$wid;
+    height:$hei;
+}

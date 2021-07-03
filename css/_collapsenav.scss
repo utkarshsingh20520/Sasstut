@@ -1,0 +1,115 @@
+
+.collapsenav{
+	position: fixed;
+    @include bound(0,100%);
+	right: 0;
+	bottom: 0;
+	background-color: white;
+	padding: 0px;
+	margin: 0px;
+	overflow-x: hidden;
+	transition: 0.5s;
+	z-index: 2;
+}
+
+.logoc{
+    @include bound(100%,70px);
+    padding: 0px 5px;
+    margin: 0px;
+    @include flexCenter(space-between);
+}
+
+.logo{
+	width: 70%;
+}
+.close{
+	width: 20%;
+	font-size: 35px;
+	color: block;
+	margin-right: 5px;
+
+    #closenav{
+        float: right;
+        cursor: pointer;
+    }
+}
+
+.collog{
+    @include bound(100%,40px);
+	background-color: #9ac5d6;
+	@include flexCenter(center);
+
+    p{
+        margin: 0px;
+        font-size: 14px;
+    }
+}
+
+.client{
+    @include bound(100%,50px);
+	@include flexCenter(space-between);
+}
+.clients{
+	@include bound(80%,50px);
+	@include flexCenter(space-between);
+    p{
+        margin: 0px;
+        font-size: 18px;
+    }
+}
+
+// gridCenter
+
+.search{
+	@include bound(20%,50px);
+	@include gridCenter();
+	background-color: #d9d7d7;
+}
+
+.verticals{
+	@include bound(100%,77.5vh);
+	position: $rel;
+}
+
+.vernav{
+	@include bound(100%,60px);
+	color: white;
+	display: flex;
+	align-items: center;
+	background-color: #0d6efd;
+	border-bottom: 1px solid white;
+	padding: 0px 10px;
+	position: $rel;
+
+    &:first-child{
+        background-color: darkblue;
+    }
+
+    &:last-child{
+        background-color: rgba(13, 110, 253 , 0.6)!important;
+        position: $abs;
+        left: 0;
+        bottom: 0;
+        height: 50px;
+        @include gridCenter();
+        border-top: 1px solid white;
+    }
+    &:hover{
+        background-color: lightblue;
+    }
+    p{
+        margin: 0px;
+    }
+}
+
+#verico{
+    font-size: 24px;
+    margin: 12px;
+}
+
+#verico1{
+	position: $abs;
+	font-size: 28px;
+    right: 0px;
+    margin-right: 20px;
+}

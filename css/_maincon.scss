@@ -1,0 +1,63 @@
+.main{
+    background-color: #d9d7d7;
+    @include bound(100%,auto);
+    padding: 10px 0px;
+}
+
+.main1{
+	@include bound(100%,auto);
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	padding: 4px 5px;
+
+}
+.main11{
+	width: 30%;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	padding: 2px;
+    form{
+        float: left;
+        font-size: 13px;
+    }
+}
+.main12{
+	width: 20%;
+	background-color: white;
+    form select{
+        width: 100%;
+     }
+}
+
+.main2{
+	@include bound(100%,auto);
+	background-color: white;
+}
+
+@media only screen and (max-width: 1024px){
+   .main11{
+     width: 50%;
+   }
+   .main1{
+   	width: 96%;
+   }
+}
+
+@media only screen and (max-width: 768px){
+    .main11{
+      width: 70%;
+      font-size: 15px;
+    }
+    .main2{
+        width: 96%;
+    }
+ }
+
+ .data ul li{
+	list-style: none;
+    i{
+        margin:  0px 5px;
+    }
+}

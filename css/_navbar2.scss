@@ -1,0 +1,48 @@
+
+.backg1{
+	@include flexCenter(center);
+	padding: 0px;
+	background-color: #d9d7d7;
+}
+
+.nav2{
+	width: 85%;
+	@include flexCenter(space-between);
+    .profile{	
+        @include bound(200px,auto);
+        @include flexCenter(center);
+        .image2{
+            @include bound($profilewidth2,$height2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                @include bound($profileimage,$profileimage);
+            }
+        }
+    }
+    
+    .text2{
+        @include bound(70%,$height2);
+        @include flexCenter(center);
+        padding-top: 15px;
+        ul{
+            padding: 0px 0px;
+            li{
+                list-style: none;
+                display: block;
+                float: left;
+            }
+        }
+    }
+}
+
+.proftext p{
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+	.nav2{
+		width: 95%;
+	}
+}
