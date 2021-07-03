@@ -178,7 +178,7 @@ $profileimage:40px;
 }
 .nav1{
 	width: 85%;
-	height: var(--height);
+	height: $height;
 	@include flexCenter(space-between);
     img{
         width: 200px;
@@ -270,7 +270,7 @@ Navigation Bar 2*/
     
     .text2{
         width:  70%;
-        height: var(--height2);
+        height: $height2;
         @include flexCenter(center);
         padding-top: 15px;
         ul{

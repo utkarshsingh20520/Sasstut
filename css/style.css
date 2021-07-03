@@ -217,7 +217,7 @@ body {
 
 .nav1 {
   width: 85%;
-  height: var(--height);
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,7 +363,7 @@ Navigation Bar 2*/
 
 .nav2 .text2 {
   width: 70%;
-  height: var(--height2);
+  height: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
